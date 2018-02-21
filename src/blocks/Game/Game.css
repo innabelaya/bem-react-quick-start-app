@@ -1,0 +1,8 @@
+.Game {
+  display: flex;
+  flex-direction: row;
+}
+
+.Game-info {
+  margin-left: 20px;
+}

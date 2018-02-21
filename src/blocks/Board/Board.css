@@ -1,0 +1,12 @@
+.Board {}
+
+.Board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/*.Status {
+  margin-bottom: 10px;
+}
+*/
