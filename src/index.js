@@ -8,6 +8,3 @@ import Game from 'b:Game';
 
 ReactDOM.render(<Game />, document.getElementById('root'));
 registerServiceWorker();
-
-
-
