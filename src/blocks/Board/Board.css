@@ -1,12 +1,12 @@
 .Board {}
 
-.Board-row:after {
+.Board-Row:after {
   clear: both;
   content: "";
   display: table;
 }
 
-.status {
+.Board-Status {
   margin-bottom: 10px;
 }
 

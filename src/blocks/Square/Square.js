@@ -2,11 +2,10 @@ import { decl } from 'bem-react-core';
 
 export default decl({
     block : 'Square',
+
     tag: 'button',
-    attrs({onClick}) {
-        return {onClick};
-    },
-    content({value}) {
-        return value;
+
+    attrs({ onClick }) {
+        return { onClick };
     }
 });
