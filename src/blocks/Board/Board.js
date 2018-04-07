@@ -35,9 +35,13 @@ export default decl({
                   'Next player: ' + (this.state.xIsNext ? 'X' : 'O')
             }</Bem>
 
-            this.renderRow(0),
-            this.renderRow(1),
-            this.renderRow(2)
+            {
+                [
+                    this.renderRow(0),
+                    this.renderRow(3),
+                    this.renderRow(6)
+                ]
+            }
         </Fragment>
       );
     },
@@ -57,7 +61,7 @@ export default decl({
     },
 
     renderRow(i) {
-        return <Bem elem="Row">{[
+        return <Bem elem="Row" key={i}>{[
           this.renderSquare(i),
           this.renderSquare(i + 1),
           this.renderSquare(i + 2)
@@ -65,7 +69,7 @@ export default decl({
     },
 
     renderSquare(i) {
-      return <Square onClick={() => this.onSquareClick(i)}>
+      return <Square key={i} onClick={() => this.onSquareClick(i)}>
           {this.state.squares[i]}
         </Square>;
     },
